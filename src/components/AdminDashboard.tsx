@@ -5,6 +5,7 @@ import {
     Package, DollarSign, Bell, Search
 } from "lucide-react";
 import { motion } from "framer-motion";
+import logo from "../assets/logo.png";
 
 const STATS = [
     { title: "Total Revenue", value: "$124,592", change: "+12.5%", icon: DollarSign, color: "text-green-400", bg: "bg-green-500/10" },
@@ -29,9 +30,8 @@ export default function AdminDashboard() {
 
             {/* Sidebar */}
             <aside className="w-64 border-r border-white/5 bg-black/50 p-6 hidden md:flex flex-col">
-                <div className="flex items-center gap-2 text-xl font-bold tracking-widest mb-10">
-                    <LayoutDashboard className="w-6 h-6 text-purple-500" />
-                    LOOT<span className="text-purple-500">ZONE</span>
+                <div className="flex justify-center mb-10">
+                    <img src={logo} alt="LOOT ZONE" className="h-16 w-auto object-contain" />
                 </div>
 
                 <nav className="flex-1 space-y-2">
