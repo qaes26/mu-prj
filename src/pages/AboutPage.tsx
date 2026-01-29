@@ -8,9 +8,9 @@ export default function AboutPage() {
                     <div className="inline-block p-3 rounded-2xl bg-white/5 border border-white/10 mb-6">
                         <Trophy className="w-8 h-8 text-cyan-400" />
                     </div>
-                    <h1 className="text-5xl md:text-6xl font-bold mb-8">About NexusHub</h1>
+                    <h1 className="text-5xl md:text-6xl font-bold mb-8">About Loot Zone</h1>
                     <p className="text-gray-400 text-lg leading-relaxed mb-8">
-                        Founded by passionate gamers, NexusHub bridges the gap between digital convenience and physical performance.
+                        Founded by passionate gamers, Loot Zone bridges the gap between digital convenience and physical performance.
                         We are dedicated to providing the fastest delivery for keys and the most reliable hardware shipping worldwide.
                     </p>
                     <div className="grid grid-cols-2 gap-6">

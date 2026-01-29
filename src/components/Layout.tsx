@@ -12,7 +12,7 @@ export default function Layout() {
             <nav className="fixed top-0 w-full z-[100] flex justify-between items-center px-6 py-4 border-b border-white/5 backdrop-blur-md bg-black/50">
                 <Link to="/" className="text-xl font-bold tracking-widest flex items-center gap-2">
                     <Gamepad2 className="w-6 h-6 text-cyan-400" />
-                    NEXUS<span className="text-cyan-400">HUB</span>
+                    LOOT<span className="text-cyan-400">ZONE</span>
                 </Link>
                 <div className="hidden md:flex gap-8 text-sm font-medium">
                     <Link to="/games" className={`transition-colors ${isActive('/games')}`}>Games</Link>
@@ -33,7 +33,7 @@ export default function Layout() {
 
             {/* Shared Footer */}
             <footer className="py-8 text-center text-sm text-gray-600 bg-black border-t border-white/5 relative z-10">
-                <p>&copy; 2026 NexusHub. All rights reserved.</p>
+                <p>&copy; 2026 Loot Zone. All rights reserved.</p>
                 <p className="mt-2 text-lg font-bold text-cyan-400">إعداد قيس الجازي</p>
             </footer>
         </div>

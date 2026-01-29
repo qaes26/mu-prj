@@ -31,7 +31,7 @@ export default function AdminDashboard() {
             <aside className="w-64 border-r border-white/5 bg-black/50 p-6 hidden md:flex flex-col">
                 <div className="flex items-center gap-2 text-xl font-bold tracking-widest mb-10">
                     <LayoutDashboard className="w-6 h-6 text-purple-500" />
-                    NEXUS<span className="text-purple-500">ADMIN</span>
+                    LOOT<span className="text-purple-500">ZONE</span>
                 </div>
 
                 <nav className="flex-1 space-y-2">
