@@ -30,8 +30,11 @@ export default function AdminDashboard() {
 
             {/* Sidebar */}
             <aside className="w-64 border-r border-white/5 bg-black/50 p-6 hidden md:flex flex-col">
-                <div className="flex justify-center mb-10">
-                    <img src={logo} alt="LOOT ZONE" className="h-16 w-auto object-contain" />
+                <div className="flex justify-center items-center gap-2 mb-10">
+                    <img src={logo} alt="LOOT ZONE" className="h-12 w-auto object-contain" />
+                    <span className="text-xl font-bold tracking-widest flex items-center gap-1">
+                        LOOT<span className="text-purple-500">ZONE</span>
+                    </span>
                 </div>
 
                 <nav className="flex-1 space-y-2">

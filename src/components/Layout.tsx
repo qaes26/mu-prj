@@ -1,5 +1,6 @@
 import { Outlet, Link, useLocation } from "react-router-dom";
 import { Search, ShoppingCart } from "lucide-react";
+import { motion } from "framer-motion";
 import logo from "../assets/logo.png";
 
 export default function Layout() {
@@ -11,8 +12,30 @@ export default function Layout() {
 
             {/* Shared Navbar */}
             <nav className="fixed top-0 w-full z-[100] flex justify-between items-center px-6 py-4 border-b border-white/5 backdrop-blur-md bg-black/50">
-                <Link to="/" className="flex items-center gap-2">
-                    <img src={logo} alt="LOOT ZONE" className="h-12 w-auto object-contain" />
+                <Link to="/" className="flex items-center gap-2 group">
+                    <div className="relative z-20">
+                        <img src={logo} alt="LOOT ZONE" className="h-12 w-auto object-contain" />
+                    </div>
+                    <div className="overflow-hidden -ml-2 pl-2 py-1"> {/* Mask container with slight overlap */}
+                        <motion.div
+                            initial={{ x: "-100%", opacity: 0 }}
+                            animate={{
+                                x: ["-100%", "0%", "0%", "-100%"],
+                                opacity: [0, 1, 1, 0]
+                            }}
+                            transition={{
+                                duration: 4,
+                                ease: "easeInOut",
+                                repeat: Infinity,
+                                repeatDelay: 1,
+                                times: [0, 0.2, 0.8, 1] // Spend 60% of time visible
+                            }}
+                            className="text-xl font-bold tracking-widest flex items-center whitespace-nowrap"
+                        >
+                            <span className="text-purple-500 mr-1">LOOT</span>
+                            <span className="text-cyan-400">ZONE</span>
+                        </motion.div>
+                    </div>
                 </Link>
                 <div className="hidden md:flex gap-8 text-sm font-medium">
                     <Link to="/games" className={`transition-colors ${isActive('/games')}`}>Games</Link>
